@@ -1,206 +1,181 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap #01 - Login Form</Form></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <title>Bootstrap #01 - Login Form</Form>
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
     <style>
-        html{
+        html {
             scroll-behavior: smooth;
         }
-        #toaster{
+
+        #toaster {
             position: fixed;
             bottom: 10px;
             right: 10px;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
     </style>
 </head>
+
 <body>
 
-    
-    <header class="align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm" id="top">
-        
+
+    <header class="align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container m-auto" width="100%">
                 <a class="navbar-brand" href="#">
-                    <img src="img/cleber.png" alt="" width="30" height="24">
-                  </a>  
-              <a class="navbar-brand" href="#">
-                  <img src="img/bootstrap-5.svg" class="img-fluid" width="200px" alt="">
-              </a>
-              <button class="navbar-toggler" type="button">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#02">Cards</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#03">Form</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#04">Tabelas</a>
-                  </li>
-                </ul>
-              </div>
+                    <img src="https://www.varginha.mg.gov.br/fotos/80314760d6b387cc2823b9c830ebf234.jpg" alt=""
+                        width="50px" height="44px">
+                </a>
+                <a class="navbar-brand" href="#">
+                    <h3>Bespin Bank</h3>
+                </a>
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">serviços</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
 
     </header>
- 
     <div class="container">
-        <section id="01">
-            <div class="row align-items-center">
-                <div class="col">  
-                    <div class="card">
-                        <h4 class="mt-5 mb-4 text-center">Seu user: Usuario</h2>
-                    </div>
-                </div>
-                <div class="col"> 
-                    <div class="card">
-                        <h4 class="mt-5 mb-4 text-center">Data: Hoje</h2>
-                    </div>
-                </div>
-                <div class="col"> 
-                    <div class="card">
-                        <h4 class="mt-5 mb-4 text-center">Tempo: Chuvoso</h2>
-                    </div>
+        <div class="row" style="padding: 15px;">
+            <div class="card" style="width: 18rem; padding: 15px;">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCAC0AOoDASIAAhEBAxEB/8QAGwABAAMBAQEBAAAAAAAAAAAAAAECAwUGBAf/xABGEAACAQIDBAUIBwUFCQAAAAAAAQIDEQQSIQUxQVETFGGS0UJSU1RxgZGhBhUiMqKxwRYjRGJyJDNjs9I1Q3WCk5Sy4fD/xAAbAQACAwEBAQAAAAAAAAAAAAAAAQIDBQQGB//EAC8RAAIBAgMHAgYCAwAAAAAAAAABAgMRBBIhBRMxQVFSkRRhFSJTcbHRMqEjQoH/2gAMAwEAAhEDEQA/APr15jXmAbB86GvMa8wAAa8xrzAABrzGvMAAGvMa8wAGNeY15gWYBYa8xrzJsTYjcdiuvMnXmTYm2gXHYrrzI15lrCyC4WK682NeZNhYYrEa8xrzAGIa8xrzAAQ15jXmAADXmNeYAANeY15gAAAAAAAAAAAAAADA3kpE2ItjSCRKQsTYVyaRFibFspNhXJWM5OEIynOSjCKcpSfBL9eRy6u1pOH7mlknn31LTTp+xW1fE6mJoU69GpTnZKS+zJ+TNfdaPL6+/iUTk+CPQbKwVGtFzqK9n/w+yrtfEzjGVKEaThfOvvqclw+0t3/1zo4DFVcXGrKdOEFDo4rJm1k03Lf7jgNKKemivJ9vE9ThsHWweGo0qtOUZtdJNtaOc/tOz3abvcKE/ms2dG0sLQo0P8cNepNhYvlIsdFzyzRRorZmjRDJJkGigJaIJEWgAAAAAAAAAAAAEAAAwALCAEpCxKFcdgWCRZIi2WJEJFxYskiLZYkRY0pQpyq0o1JWhKSUne2ntIsfbglhkqnSZOkzadJb7tvJuc1erkg5HdgsOq9aMG0vv7H0PBYBpXoQdmmtXv8AifM9h7CbbeAoXbu9Z73/AMx939n/AML8JWj1X7fV3R3rP0OS17aZsh51znxuz6HShCKtFJL2PjWw9hJp9QoXTTX396d15R0ZJSUoySalvTV0wCtzk+LLsqtaxz62z7yzUXFJ74Sb09jK4XZrrLHyqzUepwhNxisyqZs2l9OR0yMC7w+kL/wofJzR2xxlVxcL8n+DHnsjCqoqqjzWnLwc7q2G9FH5+I6rhfRR+fibA896qv3vyz03oML9KPhGHVcL6KPz8R1TCehj8/E3Aeqr978sPh+E+lHwjDqmD9DH5+I6pg/Qx/F4m4D1Vfvflh8Pwn0o+EYdUwfoY/i8R1TB+hj+LxNwHqq/e/LD4fhPpR8Iw6pg/Qx/F4jqmD9DH8XibgPVV+9+WHw/CfSj4RwQAfST4iACRDABIhpBEglCJJEpF0iEiyRBstSJSLJMIukVNlkYkJH0YaVOnVUp7srSdr5W+JkkWUfApqLPFxZ00ZulNVI8jqdJDLnTk42veMJu67ElcQqQqXyqejSeenUhv5KaRy6/0h2PhakqFV4h1KaSqdBRVSEZcY5syV1xMf2q2Dzxvvw6/wBZhOhU5RZ9EpVYyipNrU7gOH+1WweeN/7eP+s+av8ATDARX9mweJqSuta8qdKNuOkcz+ZFYeq/9Sx1YLmeklKMIzm90U34IxwN+pfSBve8LTb+Mznxxyx1GnVp1FKjU+0lFJWa8mS33XE+jD4qNDD7SpShKTxdGNOLi0lFrNq7+06VhKkE5ff8GQ9rUJzVPVa8/ufHSoYiu5dDCU8tnKzSSvuV295MMNi6kak4UpuNNuMtyd1vSTd9OJthMXVwiqRVOE4zalaTatJK17o0pbSxNGNVZacpTnUqKTuskpu70Whlww8GlmTvz0NqeMs3llG3LVfs5+vNjXmyfeiLrmjm3FTtfg6fV0O9eUNebGvNi8fOQvHzkG4qdr8B6uh3ryv2NebGvNi8POj8Rmh50R7ir2vwHq6H1F5X7GvNjXmxmh50fiRmj50fiLcVO1+A9XQ+ovK/Z84APoZ8VCJBIhgkARNEkoIshMmiUi6KouiqRZFEo0SKouuBVJlyRKRzNrbR6rF4ahK2JnH95Nf7iDW5fzP5e/T7sViY4PDV8Q0m4JKnF7pVJaRT7OL9h42c6lSc6lSTlOcnKcnvlJu7bIG1s7CKrLeT4L8kc/izs7L2LVxEqdfF0YPCyhJqlOU1VndfZnaO5cd5xtNLq8U05JcUnqj122I18Rs5ywjlKDnTrSVJu9Shlb0tvS0duzsMLbGKq03ToU3l3js5dD2OGpxeabV7cjhbU2JWwssRXpQisL0jcVTcm6UG9FOMtdN17s4soyjv+PA7VLbGMpYPqijRqQcKtPPWzznkndZfvJacP/RzbcHZq1nc7sCsTGDhibNrg1zXuU1sjd6Zps7aFXAVXJXlQqNdPS85edG/lLh8PZ7CnUpV6dOtSkpU6kVKElxXjzPCTg4vT7r3e3kdfYONlSxHU5v91iG3TT8ita+n9X525mgYG0cGpxdWK1XH3PStFGaMoyxM8u0ZsozRlGWxKWUILEMmVkEEkbyRFkEfElgZEgAAIklEEoRIklEEoRJEosiqLIiTRdFkVRZFTLYmiLrgURoimRfE5H0gclh8HHhLEVG+1xgrfmzzp6nbdF1cDKUVd4epGs/6GnCX5p+48sJHrNmSToWXIPRNnS2ZtergnGnL97hb3cItOVNvyqb/AE/Lec6MnCVOaSbhOE0nubjJSSfYepxFDBbbw1CWHrU6VWm3JJRi3DMlmhUgmn7H4mNtWtSgo08TC8JcX2+5uYeEm3KD1RhtDZ+ExuGe0cBlz5JVZqmrRrRWsm48JrW/s+PnD1i6tsTZ06U68alZqtKEdFOpVqaaQTbUVpv/ADZ5NaJewo2HUnOE43bgn8rfNEsXFJp8HzKzSlGS7PmZUZOFfCyi/tRxFBr2qpE3GzqLxGPwVNK66aNWf9FJ9I38kveegM6q1GDb6Htpb37WZs0e8pIsR4Nmb3FGaPcZstiUSKshksgsRWQANRiKgAZEgHw/WNP0M+9HwH1lT9DPvx8CzJLoV549T7yUc/6yp+hn34+BP1nT9BPvx8BZJdB7yPU6BKOd9Z0/QT78fAn6zp+gn34+At3LoSVSPU6KJRzfrSl6Cp34+BK2rSX8PU78fAW7l0GqsOp1EXRyltekv4ep34+BZbYor+Hqd+HgVulPoWRrQ6nWRouBx1tqh6tV/wCpDwNKW2KVWrRpRwtXNVq06ULTg/tTkorS3aVujPoXRrw4JnWtGSlGSTjJOMk9zT0aZ5XaWzauCm5wUpYWTvCe907+TU/RnrJwnSnKnUi4Ti7SjLRp2uReLTTs00007Wa5M5uBr4XEyw0vyjwiN8Liq2DrxxFFU3UjGcF0kc0bTVnpdHpK+xdmVm5RjKhN8aEkoX/olePwsfDP6Oy16PGxtw6Si7+9xl+hCcYVYuE1dM3qW0qLs72Zxa1WdetXrzy561SVSeVWV5O+iKHbX0dr8cZR91Kf6yNYfR6gneriqs/5acI018XmZOKUVljwRKW0KC1zX8nnZOWkYxcpzeWnCCcpzk+EYrU9JsfZksFCdfEJdarRUXFWao073yXXF75fDhr9+HwWCwf9xRjGTVnOV5VH2OctT6FGpPM4xk0k7tLRW13julxMfF46WIW6pLT+zNlHxLMoyxGGyruUZdmbZdEpZDIBBMrBDJIYyJAAGRZ54GHSz7B00+SO3Mjm3bNwYdNPsHTT7AzIN2zcGHTT7B00+wMyDds3Bh00+wdNPsDMg3bNwYdNPsI6aS35V7QzIN0z6D6dn/7Q2V/xDBf58DndNJWvl13XPr2dVm9pbJTS12hgf8+BGUllZZSpvPH7n6LibPam0U0ndwauk90Y8xlh5sfgjPGSy7XxX801H404mp4Wq2pvU+vUoRyLQjLDzY/BDJDzI91Eny1KWLu3GrKa7ZuL8AprO7OVirES3KvGnm+1j7FHDqNp0ab36yUVp2uxy6jhnqZPuZpZfZfgXlQxb3xv7Zr9WUeGxfCnH3zizQpThS/lO5g4mjXxtlTo5fd6GM5S0UfvSaS9p0ZQ6HC1Ip3caTTfOT0bKYfBxptVKrU6nBeRH2doxtWEabpJ3nOzkl5MU76+053UeIrJLgaKoQ2fhJZrZrPX3fI5zZRktlGzfSPBtkMoyzZRlqRUwQCCRBggAZEEADEeUB6PqWB9Wpd0dSwPq9LuludCPOA9H1LA+r0u6OpYH1el3QzoDzgPR9SwPq9LujqWB9Wpd0M6A84D0fUsD6tS7pKwWA9Wo90WcdjzZ1thYjZmGxNaeOUFmpKNCpUpupGnK95aJN3atrbh269DqOA9Wo90nqOz/VaHdITkpKxdRk6U1NcicDjvo1Txe16k4Qp0q1aMqDqUHNSoqCUoQgk7Xd3bTf2acXByova+z5010dH61ws6cZP7lLrMWk32I7awOzvVaHdLRwOz4yjKOFoqUZKUWo6pp3TRBWje19TonWlPLdLR30O5tKrB7Rxc4NSSqxcZQaadoR4o+iniKFS1pxUn5Mvsv5nFuibmVUwMJ6rRm1R25XpvVJrod8g40MRXp/cqSS5PVfBmy2hiFvVOXua/JnDLAVF/FpmzT29h5L501/Z0yTmPaFfhCmnzs3+bMZ4rEz31ZJco/ZXyFHZ9V8dCVTbuGivlTZ08TX6CndW6SWkE/wDya7DjuUpNyk223dt72yHJvWTbfNtt/Mq2zUw2GVGPueY2htGWMnfhFcEGyrDKtnakZTYbKsMhk0itsXIIuBkLgADAAAYgAAEAAAAAAAAADJTLJlCUyLRJM0TJuUuibkbE0y9ybmdy2YViaZe4uUvcn4Eco7lrhsqwOwXIu+IuQxqMjcNlWGyLodiLYuVZLZBIg2AASIgAAAAAAAAAgAAAAAAAAAAAAGLsm5AFYdy2YlSRQCsO5rfQlMxuyU2KxLMatkrtM3JfIZxWJXNSsijmQ5BZg5IMqybtkE0itsWLWITsTdCBWIsLWJzdhF7gGgIFwMQAACLZULIAYhZCyAAQshZAAAshZAAAshZAAAshlQADGVDKgBAMqGVAAAyoZUAMQyoWQAALIZUAACyFkAACyFkAADKhlQAALIWQAAf/2Q=="
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Empréstimos</h5>
+                    <p class="card-text">Confira as soluções de crédito que melhor se adaptam ao seu objetivo..</p>
+                    <a href="#" class="btn btn-primary">Conferir</a>
                 </div>
             </div>
-        </section>
-        
-        <section id="02">
-            <br>
-            <a href="#top">Cards</a>
-            <div class="row align-items-center">
-                <div class="col">  
-                    <ul class="list-group">
-                        <li class="list-group-item">Caju</li>
-                        <li class="list-group-item">Manga</li>
-                        <li class="list-group-item">Maracuja</li>
-                        <li class="list-group-item">Uva</li>
-                        <li class="list-group-item">Jaca</li>
-                      </ul>
-                </div>
-                <div class="col"> 
-                    <ul class="list-group">
-                        <li class="list-group-item">HMTL5</li>
-                        <li class="list-group-item">CSS3</li>
-                        <li class="list-group-item">JavaScript</li>
-                        <li class="list-group-item">Bootstrap</li>
-                        <li class="list-group-item">JQuery</li>
-                      </ul>
-                </div>
-
-            </div>
-           
-        </section>
-
-        <section id="03">
-            <br><a href="#top">Form</a>
-           
-            <div class="col-md-12 m-auto">
-                <div class="conteiner">
-                <form>
-                    <label for="Nome">Nome</label>
-                    <input class="form-control form-control-sm" type="text" placeholder="Nome">
-                    <label for="Nome">Edereço</label>
-                    <input class="form-control form-control-sm" type="text" placeholder="Endereço">
-                    <label for="Nome">Cidade</label>
-                    <input class="form-control form-control-sm" type="text" placeholder="Cidade">
-                    <label for="Nome">Estado</label>
-                    <input class="form-control form-control-sm" type="text" placeholder="Estado">
-                    <label for="Nome">Região</label>
-                    <input class="form-control form-control-sm" type="text" placeholder="Região">
-                    <button type="button" class="btn btn-info">Cadastrar</button>
-                </form>
-            </div>
-            </div>
-        </section>
-
-        <section id="04">
-            <br><a href="#top">Tabelas</a>
-            <div class="row align-items-center">
-                <div class="col"> 
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th scope="col">Id</th>
-                            <th scope="col">Name</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>John</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col"> 
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th scope="col">Mes</th>
-                            <th scope="col">Dia</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <th scope="row">Jan</th>
-                            <td>Mark</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">18</th>
-                                <td>John</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="card" style="width: 18rem; padding: 15px;">
+                <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Ilustra%C3%A7%C3%A3o-Boleto-Banc%C3%A1rio-PNG.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Contas</h5>
+                    <p class="card-text">Confira as soluções de crédito que melhor se adaptam ao seu objetivo...</p>
+                    <a href="#" class="btn btn-primary">Conferir</a>
                 </div>
             </div>
-        </section>
+            <div class="card" style="width: 18rem;">
+                <img style="height: 210px;"
+                    src="https://th.bing.com/th/id/OIP.ngFRbVq2M3O_KveSw95Z5gHaHa?w=186&h=186&c=7&o=5&pid=1.7"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Financero</h5>
+                    <p class="card-text">Confira as soluções de crédito que melhor se adaptam ao seu objetivo...</p>
+                    <a href="#" class="btn btn-primary">Conferir</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img style="height: 210px;"
+                    src="https://th.bing.com/th/id/R62f6c9d78c66800ea7638a512d01dfa8?rik=ptc089J1%2fdwA7g&riu=http%3a%2f%2ficon-icons.com%2ficons2%2f37%2fPNG%2f512%2fbankcards_theapplication_banco_3050.png&ehk=%2fncJCpIumk%2fGlgTk4M4R0UjM%2fHvKE4SQVg8nLLNTuFg%3d&risl=&pid=ImgRaw"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cartões</h5>
+                    <p class="card-text">Confira as soluções de crédito que melhor se adaptam ao seu objetivo...</p>
+                    <a href="#" class="btn btn-primary">Conferir</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img style="height: 210px;"
+                    src="https://st2.depositphotos.com/3071417/5571/v/450/depositphotos_55714303-stock-illustration-bank-vault-round-icon.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Seguros</h5>
+                    <p class="card-text">Confira as soluções de crédito que melhor se adaptam ao seu objetivo...</p>
+                    <a href="#" class="btn btn-primary">Conferir</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img style="height: 210px;" src="https://th.bing.com/th/id/OIP.xOQlYdm5OndUbpTNXXJJowHaHa?pid=Api&rs=1"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Consórcio</h5>
+                    <p class="card-text">Confira as soluções de crédito que melhor se adaptam ao seu objetivo...</p>
+                    <a href="#" class="btn btn-primary">Conferir</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img style="height: 210px;"
+                    src="https://th.bing.com/th/id/R8780991ac5550a5acc48ae56fad84373?rik=uvaQ%2f2IbVk%2fzow&riu=http%3a%2f%2fcontirastreamento.com%2fwp-content%2fuploads%2f2016%2f06%2fboleto-icon1.png&ehk=Mgt%2bjnsThQKOcl%2fpWTBPOgjinZqayKylP7qE2MuD%2bto%3d&risl=&pid=ImgRaw"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Boletos</h5>
+                    <p class="card-text">Confira as soluções de crédito que melhor se adaptam ao seu objetivo...</p>
+                    <a href="#" class="btn btn-primary">Conferir</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img style="height: 210px;" src="https://image.flaticon.com/icons/png/512/85/85019.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Investimentos</h5>
+                    <p class="card-text">Confira as soluções de crédito que melhor se adaptam ao seu objetivo...</p>
+                    <a href="#" class="btn btn-primary">Conferir</a>
+                </div>
+            </div>
+        </div>
 
 
         <div class="toast-container">
             <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-              <div class="toast-header">
-                <img src="img/help.png" class="rounded me-2" alt="...">
-                <strong class="me-auto">Bootstrap</strong>
-                <small class="text-muted">Agora</small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-              </div>
-              <div class="toast-body">
-                Precisa de Ajuda??
-              </div>
+                <div class="toast-header">
+                    <img src="img/help.png" class="rounded me-2" alt="...">
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small class="text-muted">Agora</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Precisa de Ajuda??
+                </div>
             </div>
-    </div>
+        </div>
 
-    
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p>© Copyrigth 2021</p>
-    </footer>
-    <script>
-        $(document).ready(function(){
-          $('.toast').toast('show');
-        });
-    </script>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p>© Copyrigth 2021</p>
+        </footer>
+        <script>
+            $(document).ready(function () {
+                $('.toast').toast('show');
+            });
+        </script>
 
 </body>
+
 </html>
