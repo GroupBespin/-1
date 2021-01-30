@@ -15,7 +15,7 @@ html {
 }
 
 .centro-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/panoramica1920x670.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/bespin.jpeg");
     height: 80%;
     background-position: center;
     background-repeat: no-repeat;
